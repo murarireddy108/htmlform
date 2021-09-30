@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html form practice</title>
+</head>
+<body>
+<div id="main">
+    <form action="www.murarireddy108@gmail.com" method="get">
+        <fieldset>
+            <legend>registration form</legend>
+            <label for="fname">First name</label><br/>
+            <input type="text"id="fname"name="fname" placeholder="first name" required="required">
+            <br/><br/>
+            <label for="lname">Last name</label><br/>
+            <input type="text"id="lname"name="lname"placeholder="Last name" required="required">
+            <br/><br/>
+            <label for="mail">Email</label><br/>
+            <input type="text" id="mail" name="mail" placeholder="enter ur email"required="required">
+            <br/><br/>
+            <label for="day">birthday</label>
+            <br>
+            <input type="date"id="day"name="day"><br>
+            <button id="btn">submit</button>
+            <br/>
+            <input type="submit" value="registra">
+        </fieldset>
+        <fieldset>
+            <legend>rating</legend>
+            <label for="points">point from 0 to 10</label>
+            <input type="range" id="points" name="points" step="0.1" min="0"
+            max="10"onchange='updatetex(this.value)'>
+            <input type="number" id="textinput"name="textinput">
+        </fieldset>
+    </form>
+</div>  
+</body>
+</html>
