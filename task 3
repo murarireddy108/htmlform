@@ -1,0 +1,104 @@
+TASK-3
+1)For the given JSON iterate over all for loops (for, for in, for of, forEach).
+A)FOR
+
+var obj = [ { person: "sasi", age: "2", company: "GUVI" }, { person: "satya", age: "5", company: "GUVI geek" }, { person: "raju", age: "8", company: "GUVI geek network" }, ]; 
+for(i=0;i<obj.length;i++){
+    console.log(obj[i].person)
+    console.log(obj[i].age)
+    console.log(obj[i].company)
+}
+
+B)for in
+for(i=0;i<obj.length;i++){
+for(var property in obj[i]){
+     console.log(`${property}: ${obj[i][property]}`);
+}
+}
+
+C)for of
+for(var elements of obj){
+  console.log(elements.person)
+    console.log(elements.age)
+    console.log(elements.company)  
+}
+
+D)for each
+
+
+obj.forEach(function(objects){
+   console.log(objects.person)
+    console.log(objects.age)
+    console.log(objects.company)
+})
+
+2)RESUME IN JSON FORMAT
+RESUME={
+  "basics": {
+    "name": "Sasidhar",
+    "label": "Programmer",
+      "email": "sasidhar.katikela@gmail.com",
+    "phone": 9182724951,
+    "location": {
+      "address": "11-3-89",
+      "postalCode": 4646489,
+      "city": "Anantapur",
+      "countryCode": "India",
+      "region": "Indian"
+    }
+},
+
+
+"education": {
+    "institution": "JNTUACEk",
+    "url": "https://jntucek.com/",
+    "area": "Software Development",
+    "studyType": "Bachelor",
+    "startDate": "2017-06-01",
+    "endDate": "2021-07-01",
+    "score": "6.7",
+    "Course":’computer science engineering 
+  },
+"awards": {
+    "title": "Talent",
+    "date": "2014-11-01",
+    "awarder": "Springdale",
+    "summary": "There is no spoon."
+  },
+"skills": {
+    "name": "Web Development",
+    "level": "Master",
+    "keywords": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+“node”,
+“Angular”,
+“MangoDB”,
+“express”,
+“react”
+    ]
+  },
+"interests": {
+    "name": "Bussiness",
+    "keywords": [
+      "Stockmarket",
+      "Realestate"
+    ]
+}
+"projects": {
+    "name": "Face Mask Detection And Face Recognition Attendence System",
+    "description": "Most useful in Covid suituation",
+    
+    "keywords": [
+      "Python"
+    ],
+    "startDate": "2021-04-01",
+    "endDate": "2021-07-01",
+    "url": "github",
+    "role":"Team Lead"
+    }
+}
+3)DONE READING
+
+4)DOING WELL
