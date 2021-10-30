@@ -1,0 +1,35 @@
+TASK-2
+1.)List 5 difference between Browser JS(console) v Nodejs
+                                             JAVASCRIPT
+1. Javascript is a programming language that is used for writing scripts on the website. 
+2. Javascript is capable enough to add HTML and play with the DOM.
+3.  Javascript can run in any browser engine as like JS core in safari and          Spidermonkey in Firefox.
+4. Some of the javascript frameworks are RamdaJS, TypedJS, etc. 
+5. Javascript is used in frontend development.
+                                                    NODEJS
+1. NodeJS is a Javascript runtime environment.
+2. Nodejs does not have capability to add HTML tags.
+3. V8 is the Javascript engine inside of node.js that parses and runs Javascript. 
+4. Some of the Nodejs modules are Lodash, express etc. These modules are to be imported from npm.
+5. Nodejs is written in C, C++ and Javascript.
+
+2)
+1. The html parse and css parse are then combined and put those together and it layout the render tree and then paint it.
+2. Parse tree is a representation of HTMLdocument.where browser parses HTML into Dom Treeand where css into CSS object models.
+3. Parsing stops which it hits a script tag and which it makes rendering slow.
+4. Render trees a multiple tree mainly it contain render objects ,render styles,
+Render layers,line boxes.
+5. Dom node converted into a render object which has visual output,Geometric info,It acn layout and paint and Hold style and computed metrics.
+
+3)DONE READING.
+4)Execute the below code and write your description in txt file
+   1. typeof(1)-number
+   2. typeof(1.1)-number
+   3. typeof('1.1')-string
+   4. typeof(true)-boolean
+   5. typeof(null)-object
+   6. typeof(undefined)-undefined
+   7. typeof([])-object
+   8. typeof({})-object
+   9. typeof(NaN)-number
+5)DONE
