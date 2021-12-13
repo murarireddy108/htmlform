@@ -1,0 +1,30 @@
+body {
+  background-color: skyblue;
+}
+#mainbody {
+  margin-left: 40%;
+  margin-top: 20px;
+  width: 250px;
+  height: 350px;
+  background-color: teal;
+}
+#screen {
+  margin-top: 15px;
+  margin-left: 15px;
+  width: 85%;
+  height: 35px;
+  font-size: 30px;
+  border-radius: 5px;
+}
+button {
+  margin-left: 5px;
+  height: 38px;
+  margin-top: 10px;
+  width: 48px;
+  border-radius: 20px;
+  font-size: 10px;
+  font-family: sans-serif;
+}
+.keyboard {
+  margin-top: 25px;
+}
