@@ -35,14 +35,14 @@ obj.forEach(function(objects){
 2)RESUME IN JSON FORMAT
 RESUME={
   "basics": {
-    "name": "Sasidhar",
+    "name": "murari reddy",
     "label": "Programmer",
-      "email": "sasidhar.katikela@gmail.com",
-    "phone": 9182724951,
+      "email": "murarireddy108@gmail.com",
+    "phone": 9591983109,
     "location": {
-      "address": "11-3-89",
-      "postalCode": 4646489,
-      "city": "Anantapur",
+      "address": "",
+      "postalCode": ,
+      "city": "ballari",
       "countryCode": "India",
       "region": "Indian"
     }
@@ -57,7 +57,7 @@ RESUME={
     "startDate": "2017-06-01",
     "endDate": "2021-07-01",
     "score": "6.7",
-    "Course":’computer science engineering 
+    "Course":’electronics and telecommunication engineering 
   },
 "awards": {
     "title": "Talent",
