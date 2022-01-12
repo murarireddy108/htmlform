@@ -4,37 +4,84 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>html form practice</title>
+    <title>Form Submission</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 </head>
-<body>
-<div id="main">
-    <form action="www.murarireddy108@gmail.com" method="get">
-        <fieldset>
-            <legend>registration form</legend>
-            <label for="fname">First name</label><br/>
-            <input type="text"id="fname"name="fname" placeholder="first name" required="required">
-            <br/><br/>
-            <label for="lname">Last name</label><br/>
-            <input type="text"id="lname"name="lname"placeholder="Last name" required="required">
-            <br/><br/>
-            <label for="mail">Email</label><br/>
-            <input type="text" id="mail" name="mail" placeholder="enter ur email"required="required">
-            <br/><br/>
-            <label for="day">birthday</label>
-            <br>
-            <input type="date"id="day"name="day"><br>
-            <button id="btn">submit</button>
-            <br/>
-            <input type="submit" value="registra">
-        </fieldset>
-        <fieldset>
-            <legend>rating</legend>
-            <label for="points">point from 0 to 10</label>
-            <input type="range" id="points" name="points" step="0.1" min="0"
-            max="10"onchange='updatetex(this.value)'>
-            <input type="number" id="textinput"name="textinput">
-        </fieldset>
-    </form>
-</div>  
+<body style="background-color:rgb(245, 245, 245);">
+    <div class="box">
+        <div class="container-fluid">
+            <div class="row">
+            <form class="col-3 col-lg-3 col-sm-3 col-md-3 form" onsubmit="event.preventDefault();onFormSubmit();"id="form">
+                <h2>Form Submission:</h2>
+                <div class="form-group">
+                    <label for="FirstName">First Name:</label>
+                    <input type="name"  id="FirstName" class="form-control" placeholder=" First Name" name="FirstName" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="LastName">Last Name:</label>
+                    <input type="name"  id="LastName" class="form-control" placeholder=" Last Name" name="LastName" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="adressline1">Adress Line1:</label>
+                    <input type="text"  id="adressline1" class="form-control" placeholder=" Adress Line1" name="adressline1" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="adressline2">Adress Line2:</label>
+                    <input type="text"  id="adressline2" class="form-control" placeholder=" Adress Line2" name="adressline2" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="pincode">Pincode</label>
+                    <input type="number"  id="pincode" class="form-control" placeholder=" Pincode" name="pincode" required>
+                  </div>
+                  <div class="form-group rd">
+                    <label for="gender">Gender</label><br>
+                    <input type="radio"  id="male"   name="gender" style="margin-right: 9px;"value="Male" required><label for="male" style="margin-right: 5px;">Male</label>
+                    <input type="radio"  id="female"   name="gender" style="margin-right: 9px;"value="Female"><label for="female">Female</label>
+                  </div>
+                  <div class="form-group checkbox">
+                    <label for="checkbox">Choice of Food<span style="font-size: 15px;">(must choose atleast 2 out 0f 5 Options)</span></label><br>
+                    <input type="checkbox"  id="north"   name="north" style="margin-right: 9px;"class="food"value="North Indian"><label for="north">North Indian</label><br>
+                    <input type="checkbox"  id="south"   name="south" style="margin-right: 9px;"class="food"value="South Indian"><label for="south" >South Indian</label><br>
+                    <input type="checkbox"  id="chinese"   name="chinese" style="margin-right: 9px;"class="food" value="chinese"><label for="chinese" >Chinese</label><br>
+                    <input type="checkbox"  id="japanese"   name="japanese" style="margin-right: 9px;"class="food"value="japanese"><label for="japanese" >Japenede</label><br>
+                    <input type="checkbox"  id="sea"   name="sea" style="margin-right: 9px;"><label for="sea"class="food"value="Sea Food" >Sea Food</label><br>
+                  </div>
+                  <div class="form-group">
+                    <label for="state">State:</label>
+                    <input type="name"  id="state" class="form-control" placeholder=" State" name="state" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="country">Country:</label>
+                    <input type="name"  id="country" class="form-control" placeholder=" Country" name="country" required>
+                  </div>
+                  <button type="submit" class="btn button btn-info" value="submit">Submit</button>
+
+            </form>
+            <div class="database col-8 col-lg-8 col-sm-8 col-md-8 ">
+                <h2>Temporary Database</h2>
+                <table class="table " id="t1">
+                    <thead class="thead-dark ">
+                       <tr>
+                           <th>First Name</th>
+                           <th>Last Name</th>
+                           <th>Adress</th>
+                           <th>Pincode</th>
+                           <th>Gender</th>
+                           <th>Food</th>
+                           <th>State</th>
+                           <th>Country</th>
+                       </tr> 
+                    </thead>
+                    <tbody class="tbody-light">
+                      
+                    </tbody>
+                </table>
+            </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>

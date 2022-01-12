@@ -1,0 +1,13 @@
+.button {
+  width: 100%;
+}
+* {
+  box-sizing: border-box;
+  font-size: 15px;
+}
+.box {
+  margin-top: 40px;
+}
+.database {
+  margin: 50px 40px 0px 50px;
+}
